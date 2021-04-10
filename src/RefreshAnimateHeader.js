@@ -44,16 +44,17 @@ function RefreshAnimateHeader(props) {
   });
   return (
     <SmartRefresh
+      style={props.SmartRefreshStyle}
       refreshing={refreshing}
       onChangeState={onChangeStateCallBack}
       onChangeOffset={onChangeOffsetCallBack}
     >
         <SmartRefreshHeader
-          style={styles.container}
+          style={[styles.container, props.SmartRefreshHeaderStyle]}
         >
           <LottieView
               ref={lottieRef}
-              style={styles.lottery}
+              style={[styles.lottery, props.LottieViewStyle]}
               resizeMode={'cover'}
               loop={true}
               autoSize={false}
