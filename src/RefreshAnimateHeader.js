@@ -59,7 +59,7 @@ function RefreshAnimateHeader(props) {
               loop={true}
               autoSize={false}
               autoPlay={false}
-              speed={2}
+              speed={2 || props.SmartRefreshSpeed}
               source={source || require('./assets/cycle_animation.json')}
               hardwareAccelerationAndroid={true}
               cacheStrategy={'strong'}
@@ -67,6 +67,7 @@ function RefreshAnimateHeader(props) {
                 inputRange:[0,300],
                 outputRange:[0,1],
               })}
+              imageAssetsFolder={'images' || props.SmartRefreshImageAssetsFolder}
           />
         </SmartRefreshHeader>
       {props.children}
