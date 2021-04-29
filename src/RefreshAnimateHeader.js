@@ -59,7 +59,7 @@ function RefreshAnimateHeader(props) {
               loop={true}
               autoSize={false}
               autoPlay={false}
-              speed={2 || props.SmartRefreshSpeed}
+              speed={props.SmartRefreshSpeed || 2}
               source={source || require('./assets/cycle_animation.json')}
               hardwareAccelerationAndroid={true}
               cacheStrategy={'strong'}
