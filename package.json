@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "dayjs": "^1.9.8",
-    "lottie-react-native": "^3.5.0",
+    "lottie-react-native": "^4.0.2",
     "prop-types": "^15.7.2"
   }
 }
